@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-firestore.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1>Stalker Portal</h1>
+
+  <div class="content">
+
+      <form id="add-mac-form">
+          <input type="text" name="mac" placeholder="MAC">
+          <button>Add Mac</button>
+      </form>
+
+      <ul id="mac-list"></ul>
+
+  </div>
+
+
+    
+<script>
+    var config = {
+    apiKey: "AIzaSyDqSriU5OQ5kkrem_KAnJIQ32fB72UcTzw",
+  authDomain: "msftvstb.firebaseio.com",
+  databaseURL: "https://msftvstb.firebaseio.com/",
+  projectId: "msftvstb",
+  storageBucket: "msftvstb.appspot.com",
+  messagingSenderId: "210441548744",
+  appId: "1:210441548744:web:046a24394677a1343946fd",
+};
+firebase.initializeApp(config);
+            const db = firebase.firestore();
+            db.settings({ timestampsInSnapshots: true }); 
+        </script>
+        <script src="app.js"></script>
+</body>
+
+</html>
