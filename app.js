@@ -1,5 +1,5 @@
-const macList = document.querySelector('#kobraiptv-list');
-const form = document.querySelector('#add-kobraiptv-form');
+const macList = document.querySelector('#mac-list');
+const form = document.querySelector('#add-mac-form');
 
 function rendermac(doc){
     let li = document.createElement('li');
@@ -18,13 +18,13 @@ function rendermac(doc){
  cross.addEventListener('click', (e) => {
     e.stopPropagation();
     let id = e.target.parentElement.getAttribute('data-id');
-    db.collection('mac').doc(id).delete();
+    db.collection('kobraiptv').doc(id).delete();
 });
 }
 
 
 //getting data
-db.collection('mac').get().then((snapshot) => {
+db.collection('kobraiptv').get().then((snapshot) => {
     snapshot.docs.forEach(doc =>{
         rendermac(doc);
     })
@@ -34,12 +34,8 @@ db.collection('mac').get().then((snapshot) => {
 //saving data
 form.addEventListener('submit', (e) =>{
     e.preventDefault();
-    db.collection('mac').add({
+    db.collection('kobraiptv').add({
         mac :form.mac.value
     });
     form.mac.value ='';
 });
-
- 
-
- 
