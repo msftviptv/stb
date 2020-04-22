@@ -1,5 +1,5 @@
-const macList = document.querySelector('#mac-list');
-const form = document.querySelector('#add-mac-form');
+const macList = document.querySelector('#kobraiptv-list');
+const form = document.querySelector('#add-kobraiptv-form');
 
 function rendermac(doc){
     let li = document.createElement('li');
