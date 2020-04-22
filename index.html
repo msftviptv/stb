@@ -26,17 +26,20 @@
 
 
 
-<script>     apiKey: "AIzaSyDqSriU5OQ5kkrem_KAnJIQ32fB72UcTzw",	
-  authDomain: "msftvstb.firebaseio.com",	
-  databaseURL: "https://msftvstb.firebaseio.com/",	
-  projectId: "msftvstb",	
-  storageBucket: "msftvstb.appspot.com",	
-  messagingSenderId: "210441548744",	
-  appId: "1:210441548744:web:046a24394677a1343946fd",	
-};	
-firebase.initializeApp(config);	
-            const db = firebase.firestore();	
-            db.settings({ timestampsInSnapshots: true }); 	</script>
+<script>
+    var config = {
+    apiKey: "AIzaSyDqSriU5OQ5kkrem_KAnJIQ32fB72UcTzw",
+  authDomain: "msftvstb.firebaseio.com",
+  databaseURL: "https://msftvstb.firebaseio.com/",
+  projectId: "msftvstb",
+  storageBucket: "msftvstb.appspot.com",
+  messagingSenderId: "210441548744",
+  appId: "1:210441548744:web:046a24394677a1343946fd",
+};
+firebase.initializeApp(config);
+            const db = firebase.firestore();
+            db.settings({ timestampsInSnapshots: true }); 
+        </script>
         <script src="app.js"></script>
 </body>
 
