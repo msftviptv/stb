@@ -1,3 +1,4 @@
+
 const macList = document.querySelector('#kobraiptv-list');
 const form = document.querySelector('#add-kobraiptv-form');
 
