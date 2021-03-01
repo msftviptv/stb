@@ -26,20 +26,30 @@
 
 
 
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-analytics.js"></script>
+
 <script>
-    var config = {
-    apiKey: "AIzaSyDqSriU5OQ5kkrem_KAnJIQ32fB72UcTzw",
-  authDomain: "msftvstb.firebaseio.com",
-  databaseURL: "https://msftvstb.firebaseio.com/",
-  projectId: "msftvstb",
-  storageBucket: "msftvstb.appspot.com",
-  messagingSenderId: "210441548744",
-  appId: "1:210441548744:web:046a24394677a1343946fd",
-};
-firebase.initializeApp(config);
-            const db = firebase.firestore();
-            db.settings({ timestampsInSnapshots: true }); 
-        </script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyDAJjy41jNAmV27eM1Os24k6UJzF8XQ94Y",
+    authDomain: "iptv-d35fe.firebaseapp.com",
+    databaseURL: "https://iptv-d35fe-default-rtdb.firebaseio.com",
+    projectId: "iptv-d35fe",
+    storageBucket: "iptv-d35fe.appspot.com",
+    messagingSenderId: "714962932205",
+    appId: "1:714962932205:web:da0e4c4cdb3727200457e4",
+    measurementId: "G-M8DCX4VK7E"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
         <script src="app.js"></script>
 </body>
 
